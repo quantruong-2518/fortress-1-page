@@ -1,0 +1,14 @@
+<header class="flex c justify-between">
+  <a [routerLink]="['/']"
+    ><img
+      class="h-6 bg-contain"
+      alt="logo"
+      src="https://fortressgb.com/wp-content/themes/FortressGB/images/fortress-logo-b.svg"
+  /></a>
+
+  <div class="flex">
+    <span *ngFor="let item of items | async; trackBy: trackByFunc">{{
+      item
+    }}</span>
+  </div>
+</header>
